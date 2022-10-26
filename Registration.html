@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+  <style>
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical
+    }
+
+
+    input[type=submit] {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <form action="action.php">
+        <label for="Fname">First name</label>
+        <input type="text" id="fname" name="First name" placeholder="Your name...">
+
+        <label for="Lname">Last name</label>
+        <input type="text" id="Lname" name="Last name" placeholder="Your last name...">
+
+        <label for="phone">Phone number</label>
+        <input type="text" id="Pnumber" name="Phone number" placeholder="Your number...">
+
+        <label for="gender">Choose a gender:</label>
+        <select id="gender" name="Gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="None">None</option>
+        </select>
+
+        <label id="date_of_birth">Date of Birth:<br />
+          <select class="first" name="date_of_birth:day" tabindex="7">
+            <option value="">
+              <!-- -->
+            </option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <select name="date_of_birth:mon" tabindex="8">
+            <option value="">
+              <!-- -->
+            </option>
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>
+            <option value="4">Apr</option>
+            <option value="5">May</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+          <select name="date_of_birth:year" tabindex="9">
+            <option value="">
+              <!-- -->
+            </option>
+            <option value="1920">1920</option>
+            <option value="1921">1921</option>
+            <option value="1922">1922</option>
+            <option value="1923">1923</option>
+            <option value="1924">1924</option>
+            <option value="1925">1925</option>
+            <option value="1926">1926</option>
+            <option value="1927">1927</option>
+            <option value="1928">1928</option>
+            <option value="1929">1929</option>
+            <option value="1930">1930</option>
+            <option value="1931">1931</option>
+            <option value="1932">1932</option>
+            <option value="1933">1933</option>
+            <option value="1934">1934</option>
+            <option value="1935">1935</option>
+            <option value="1936">1936</option>
+            <option value="1937">1937</option>
+            <option value="1938">1938</option>
+            <option value="1939">1939</option>
+            <option value="1940">1940</option>
+            <option value="1941">1941</option>
+            <option value="1942">1942</option>
+            <option value="1943">1943</option>
+            <option value="1944">1944</option>
+            <option value="1945">1945</option>
+            <option value="1946">1946</option>
+            <option value="1947">1947</option>
+            <option value="1948">1948</option>
+            <option value="1949">1949</option>
+            <option value="1950">1950</option>
+            <option value="1951">1951</option>
+            <option value="1952">1952</option>
+            <option value="1953">1953</option>
+            <option value="1954">1954</option>
+            <option value="1955">1955</option>
+            <option value="1956">1956</option>
+            <option value="1957">1957</option>
+            <option value="1958">1958</option>
+            <option value="1959">1959</option>
+            <option value="1960">1960</option>
+            <option value="1961">1961</option>
+            <option value="1962">1962</option>
+            <option value="1963">1963</option>
+            <option value="1964">1964</option>
+            <option value="1965">1965</option>
+            <option value="1966">1966</option>
+            <option value="1967">1967</option>
+            <option value="1968">1968</option>
+            <option value="1969">1969</option>
+            <option value="1970">1970</option>
+            <option value="1971">1971</option>
+            <option value="1972">1972</option>
+            <option value="1973">1973</option>
+            <option value="1974">1974</option>
+            <option value="1975">1975</option>
+            <option value="1976">1976</option>
+            <option value="1977">1977</option>
+            <option value="1978">1978</option>
+            <option value="1979">1979</option>
+            <option value="1980">1980</option>
+            <option value="1981">1981</option>
+            <option value="1982">1982</option>
+            <option value="1983">1983</option>
+            <option value="1984">1984</option>
+            <option value="1985">1985</option>
+            <option value="1986">1986</option>
+            <option value="1987">1987</option>
+            <option value="1988">1988</option>
+            <option value="1989">1989</option>
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+            <option value="1997">1997</option>
+            <option value="1998">1998</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+          </select>
+        </label>
+        <label for="country">Country</label>
+        <select id="country" name="Country">
+          <option value="Austria">Austria</option>
+
+          1. <option value="Afganistan">Afghanistan</option>
+          2. <option value="Albania">Albania</option>
+          3. <option value="Algeria">Algeria</option>
+          4. <option value="American Samoa">American Samoa</option>
+          5. <option value="Andorra">Andorra</option>
+          6. <option value="Angola">Angola</option>
+          7. <option value="Anguilla">Anguilla</option>
+          8. <option value="Antigua & Barbuda">Antigua & Barbuda</option>
+          9. <option value="Argentina">Argentina</option>
+          10. <option value="Armenia">Armenia</option>
+          11. <option value="Aruba">Aruba</option>
+          12. <option value="Australia">Australia</option>
+          13. <option value="Austria">Austria</option>
+          14. <option value="Azerbaijan">Azerbaijan</option>
+          15. <option value="Bahamas">Bahamas</option>
+          16. <option value="Bahrain">Bahrain</option>
+          17. <option value="Bangladesh">Bangladesh</option>
+          18. <option value="Barbados">Barbados</option>
+          19. <option value="Belarus">Belarus</option>
+          20. <option value="Belgium">Belgium</option>
+          21. <option value="Belize">Belize</option>
+          22. <option value="Benin">Benin</option>
+          23. <option value="Bermuda">Bermuda</option>
+          24. <option value="Bhutan">Bhutan</option>
+          25. <option value="Bolivia">Bolivia</option>
+          26. <option value="Bonaire">Bonaire</option>
+          27. <option value="Bosnia & Herzegovina">Bosnia & Herzegovina</option>
+          28. <option value="Botswana">Botswana</option>
+          29. <option value="Brazil">Brazil</option>
+          30. <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
+          31. <option value="Brunei">Brunei</option>
+          32. <option value="Bulgaria">Bulgaria</option>
+          33. <option value="Burkina Faso">Burkina Faso</option>
+          34. <option value="Burundi">Burundi</option>
+          35. <option value="Cambodia">Cambodia</option>
+          36. <option value="Cameroon">Cameroon</option>
+          37. <option value="Canada">Canada</option>
+          38. <option value="Canary Islands">Canary Islands</option>
+          39. <option value="Cape Verde">Cape Verde</option>
+          40. <option value="Cayman Islands">Cayman Islands</option>
+          41. <option value="Central African Republic">Central African Republic</option>
+          42. <option value="Chad">Chad</option>
+          43. <option value="Channel Islands">Channel Islands</option>
+          44. <option value="Chile">Chile</option>
+          45. <option value="China">China</option>
+          46. <option value="Christmas Island">Christmas Island</option>
+          47. <option value="Cocos Island">Cocos Island</option>
+          48. <option value="Colombia">Colombia</option>
+          49. <option value="Comoros">Comoros</option>
+          50. <option value="Congo">Congo</option>
+          51. <option value="Cook Islands">Cook Islands</option>
+          52. <option value="Costa Rica">Costa Rica</option>
+          53. <option value="Cote DIvoire">Cote DIvoire</option>
+          54. <option value="Croatia">Croatia</option>
+          55. <option value="Cuba">Cuba</option>
+          56. <option value="Curaco">Curacao</option>
+          57. <option value="Cyprus">Cyprus</option>
+          58. <option value="Czech Republic">Czech Republic</option>
+          59. <option value="Denmark">Denmark</option>
+          60. <option value="Djibouti">Djibouti</option>
+          61. <option value="Dominica">Dominica</option>
+          62. <option value="Dominican Republic">Dominican Republic</option>
+          63. <option value="East Timor">East Timor</option>
+          64. <option value="Ecuador">Ecuador</option>
+          65. <option value="Egypt">Egypt</option>
+          66. <option value="El Salvador">El Salvador</option>
+          67. <option value="Equatorial Guinea">Equatorial Guinea</option>
+          68. <option value="Eritrea">Eritrea</option>
+          69. <option value="Estonia">Estonia</option>
+          70. <option value="Ethiopia">Ethiopia</option>
+          71. <option value="Falkland Islands">Falkland Islands</option>
+          72. <option value="Faroe Islands">Faroe Islands</option>
+          73. <option value="Fiji">Fiji</option>
+          74. <option value="Finland">Finland</option>
+          75. <option value="France">France</option>
+          76. <option value="French Guiana">French Guiana</option>
+          77. <option value="French Polynesia">French Polynesia</option>
+          78. <option value="French Southern Ter">French Southern Ter</option>
+          79. <option value="Gabon">Gabon</option>
+          80. <option value="Gambia">Gambia</option>
+          81. <option value="Georgia">Georgia</option>
+          82. <option value="Germany">Germany</option>
+          83. <option value="Ghana">Ghana</option>
+          84. <option value="Gibraltar">Gibraltar</option>
+          85. <option value="Great Britain">Great Britain</option>
+          86. <option value="Greece">Greece</option>
+          87. <option value="Greenland">Greenland</option>
+          88. <option value="Grenada">Grenada</option>
+          89. <option value="Guadeloupe">Guadeloupe</option>
+          90. <option value="Guam">Guam</option>
+          91. <option value="Guatemala">Guatemala</option>
+          92. <option value="Guinea">Guinea</option>
+          93. <option value="Guyana">Guyana</option>
+          94. <option value="Haiti">Haiti</option>
+          95. <option value="Hawaii">Hawaii</option>
+          96. <option value="Honduras">Honduras</option>
+          97. <option value="Hong Kong">Hong Kong</option>
+          98. <option value="Hungary">Hungary</option>
+          99. <option value="Iceland">Iceland</option>
+          100. <option value="Indonesia">Indonesia</option>
+          101. <option value="India">India</option>
+          102. <option value="Iran">Iran</option>
+          103. <option value="Iraq">Iraq</option>
+          104. <option value="Ireland">Ireland</option>
+          105. <option value="Isle of Man">Isle of Man</option>
+          106. <option value="Israel">Israel</option>
+          107. <option value="Italy">Italy</option>
+          108. <option value="Jamaica">Jamaica</option>
+          109. <option value="Japan">Japan</option>
+          110. <option value="Jordan">Jordan</option>
+          111. <option value="Kazakhstan">Kazakhstan</option>
+          112. <option value="Kenya">Kenya</option>
+          113. <option value="Kiribati">Kiribati</option>
+          114. <option value="Korea North">Korea North</option>
+          115. <option value="Korea Sout">Korea South</option>
+          116. <option value="Kuwait">Kuwait</option>
+          117. <option value="Kyrgyzstan">Kyrgyzstan</option>
+          118. <option value="Laos">Laos</option>
+          119. <option value="Latvia">Latvia</option>
+          120. <option value="Lebanon">Lebanon</option>
+          121. <option value="Lesotho">Lesotho</option>
+          122. <option value="Liberia">Liberia</option>
+          123. <option value="Libya">Libya</option>
+          124. <option value="Liechtenstein">Liechtenstein</option>
+          125. <option value="Lithuania">Lithuania</option>
+          126. <option value="Luxembourg">Luxembourg</option>
+          127. <option value="Macau">Macau</option>
+          128. <option value="Macedonia">Macedonia</option>
+          129. <option value="Madagascar">Madagascar</option>
+          130. <option value="Malaysia">Malaysia</option>
+          131. <option value="Malawi">Malawi</option>
+          132. <option value="Maldives">Maldives</option>
+          133. <option value="Mali">Mali</option>
+          134. <option value="Malta">Malta</option>
+          135. <option value="Marshall Islands">Marshall Islands</option>
+          136. <option value="Martinique">Martinique</option>
+          137. <option value="Mauritania">Mauritania</option>
+          138. <option value="Mauritius">Mauritius</option>
+          139. <option value="Mayotte">Mayotte</option>
+          140. <option value="Mexico">Mexico</option>
+          141. <option value="Midway Islands">Midway Islands</option>
+          142. <option value="Moldova">Moldova</option>
+          143. <option value="Monaco">Monaco</option>
+          144. <option value="Mongolia">Mongolia</option>
+          145. <option value="Montserrat">Montserrat</option>
+          146. <option value="Morocco">Morocco</option>
+          147. <option value="Mozambique">Mozambique</option>
+          148. <option value="Myanmar">Myanmar</option>
+          149. <option value="Nambia">Nambia</option>
+          150. <option value="Nauru">Nauru</option>
+          151. <option value="Nepal">Nepal</option>
+          152. <option value="Netherland Antilles">Netherland Antilles</option>
+          153. <option value="Netherlands">Netherlands (Holland, Europe)</option>
+          154. <option value="Nevis">Nevis</option>
+          155. <option value="New Caledonia">New Caledonia</option>
+          156. <option value="New Zealand">New Zealand</option>
+          157. <option value="Nicaragua">Nicaragua</option>
+          158. <option value="Niger">Niger</option>
+          159. <option value="Nigeria">Nigeria</option>
+          160. <option value="Niue">Niue</option>
+          161. <option value="Norfolk Island">Norfolk Island</option>
+          162. <option value="Norway">Norway</option>
+          163. <option value="Oman">Oman</option>
+          164. <option value="Pakistan">Pakistan</option>
+          165. <option value="Palau Island">Palau Island</option>
+          166. <option value="Palestine">Palestine</option>
+          167. <option value="Panama">Panama</option>
+          168. <option value="Papua New Guinea">Papua New Guinea</option>
+          169. <option value="Paraguay">Paraguay</option>
+          170. <option value="Peru">Peru</option>
+          171. <option value="Phillipines">Philippines</option>
+          172. <option value="Pitcairn Island">Pitcairn Island</option>
+          173. <option value="Poland">Poland</option>
+          174. <option value="Portugal">Portugal</option>
+          175. <option value="Puerto Rico">Puerto Rico</option>
+          176. <option value="Qatar">Qatar</option>
+          177. <option value="Republic of Montenegro">Republic of Montenegro</option>
+          178. <option value="Republic of Serbia">Republic of Serbia</option>
+          179. <option value="Reunion">Reunion</option>
+          180. <option value="Romania">Romania</option>
+          181. <option value="Russia">Russia</option>
+          182. <option value="Rwanda">Rwanda</option>
+          183. <option value="St Barthelemy">St Barthelemy</option>
+          184. <option value="St Eustatius">St Eustatius</option>
+          185. <option value="St Helena">St Helena</option>
+          186. <option value="St Kitts-Nevis">St Kitts-Nevis</option>
+          187. <option value="St Lucia">St Lucia</option>
+          188. <option value="St Maarten">St Maarten</option>
+          189. <option value="St Pierre & Miquelon">St Pierre & Miquelon</option>
+          190. <option value="St Vincent & Grenadines">St Vincent & Grenadines</option>
+          191. <option value="Saipan">Saipan</option>
+          192. <option value="Samoa">Samoa</option>
+          193. <option value="Samoa American">Samoa American</option>
+          194. <option value="San Marino">San Marino</option>
+          195. <option value="Sao Tome & Principe">Sao Tome & Principe</option>
+          196. <option value="Saudi Arabia">Saudi Arabia</option>
+          197. <option value="Senegal">Senegal</option>
+          198. <option value="Seychelles">Seychelles</option>
+          199. <option value="Sierra Leone">Sierra Leone</option>
+          200. <option value="Singapore">Singapore</option>
+          201. <option value="Slovakia">Slovakia</option>
+          202. <option value="Slovenia">Slovenia</option>
+          203. <option value="Solomon Islands">Solomon Islands</option>
+          204. <option value="Somalia">Somalia</option>
+          205. <option value="South Africa">South Africa</option>
+          206. <option value="Spain">Spain</option>
+          207. <option value="Sri Lanka">Sri Lanka</option>
+          208. <option value="Sudan">Sudan</option>
+          209. <option value="Suriname">Suriname</option>
+          210. <option value="Swaziland">Swaziland</option>
+          211. <option value="Sweden">Sweden</option>
+          212. <option value="Switzerland">Switzerland</option>
+          213. <option value="Syria">Syria</option>
+          214. <option value="Tahiti">Tahiti</option>
+          215. <option value="Taiwan">Taiwan</option>
+          216. <option value="Tajikistan">Tajikistan</option>
+          217. <option value="Tanzania">Tanzania</option>
+          218. <option value="Thailand">Thailand</option>
+          219. <option value="Togo">Togo</option>
+          220. <option value="Tokelau">Tokelau</option>
+          221. <option value="Tonga">Tonga</option>
+          222. <option value="Trinidad & Tobago">Trinidad & Tobago</option>
+          223. <option value="Tunisia">Tunisia</option>
+          224. <option value="Turkey">Turkey</option>
+          225. <option value="Turkmenistan">Turkmenistan</option>
+          226. <option value="Turks & Caicos Is">Turks & Caicos Is</option>
+          227. <option value="Tuvalu">Tuvalu</option>
+          228. <option value="Uganda">Uganda</option>
+          229. <option value="United Kingdom">United Kingdom</option>
+          230. <option value="Ukraine">Ukraine</option>
+          231. <option value="United Arab Erimates">United Arab Emirates</option>
+          232. <option value="United States of America">United States of America</option>
+          233. <option value="Uraguay">Uruguay</option>
+          234. <option value="Uzbekistan">Uzbekistan</option>
+          235. <option value="Vanuatu">Vanuatu</option>
+          236. <option value="Vatican City State">Vatican City State</option>
+          237. <option value="Venezuela">Venezuela</option>
+          238. <option value="Vietnam">Vietnam</option>
+          239. <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+          240. <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+          241. <option value="Wake Island">Wake Island</option>
+          242. <option value="Wallis & Futana Is">Wallis & Futana Is</option>
+          243. <option value="Yemen">Yemen</option>
+          244. <option value="Zaire">Zaire</option>
+          245. <option value="Zambia">Zambia</option>
+          246. <option value="Zimbabwe">Zimbabwe</option>
+          247.
+        </select>
+
+
+        <label for="state/province">State/province</label>
+        <select id="state/province" name="state">
+          <option value="Washington Dc">Washington Dc</option>
+          <option value="Nairobi">Nairobi</option>
+          <option value="Johannesburg">Johannesburg</option>
+          <option value="Lagos">Lagos</option>
+        </select>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="Email" placeholder="Email...">
+
+        <label for="password">Password</label>
+        <input type="text" id="password" name="Password" placeholder="Password...">
+        <a href="success.html">
+        <input type="button" value="Confirm password"/>
+        </a>
+      </form>
+    </div>
+  </main>
+</body>
